@@ -19,6 +19,9 @@
     padding: 0;
     font-family: Athelas;
 }
+body{
+    font-family: Athelas;
+}
 .header {
     background: #202020;
 }
@@ -111,9 +114,12 @@
     font-size: 20px;
     padding: 15px 40px;
     cursor: pointer;
+    background: white;
+    transition: 0.5s;
 }
 .header-btn:hover{
     background: #cdcdcd;
+    scale: 1.05;
 }
 
 /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
@@ -146,6 +152,11 @@
 }
 .about-us-p{
     font-size: 24px;
+}
+.stars-5{
+    display: flex;
+    align-items: center;
+
 }
 .about-us-p, .why-p, .deadline-p{
     width: 60%;
@@ -231,8 +242,13 @@
     padding: 50px;
     /* background: green; */
 }
+.sec3-h1{
+    font-size: 40px;
+    text-align: left;
+}
 .gallery {
     /* background: blue; */
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,7 +271,7 @@
 }
 
 .ph2-left{
-    background: url(../img/IMG_4425.HEIC);
+    background: url(../img/IMG_4423.HEIC);
     width: 250px;
     height: 250px;
     margin: 5px;
@@ -304,4 +320,162 @@
     margin: 5px;
     background-size: cover;
     background-position: center center;
+}
+
+.ph1-left, .ph2-left, .ph3-center, .ph4-right, .ph5-right{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+.sec4-uslugi {
+    background: #FFF0E0;
+}
+.sec-4-content {
+    padding: 50px;
+
+}
+.h2-uslugi {
+    font-size: 40px;
+    text-align: left;
+}
+.sec4-cards {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec4-card-1 {
+
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    transition: 0.5s;
+}
+.sec4-card-1:hover{
+    scale: 1.1;
+}
+.sec4-card1-img, .sec4-card1-img2, .sec4-card1-img3{
+    width: 350px;
+    height: 500px;
+    background: url(../img/zamer.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.sec4-card1-img2{
+    background: url(../img/IMG_9957.png);
+    background-position: center;
+    background-size: cover;
+}
+.sec4-card1-img3{
+    background: url(../img/IMG_7352.png);
+    background-position: center;
+    background-size: cover;
+}
+.sec4-h2 {
+    margin-top: 15px;
+    font-size: 28px;
+    font-family: Athelas-Regular;
+}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+.feedback {
+    /* background: red; */
+}
+.fb-content {
+    /* background: green; */
+    padding: 50px;
+}
+.fb-h2 {
+    font-size: 40px;
+    text-align: left;
+}
+.fb-cards {
+    margin-top: 50px;
+    /* background: blue; */
+    display: flex;
+
+}
+.fb-card1 {
+    /* background: lawngreen; */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    transition: 0.5s;
+}
+.fb-card1:hover{
+    scale: 1.1;
+}
+.fb-card1-img {
+    width: 280px;
+    height: 320px;
+    border-radius: 30px;
+    background: url(../img/otzyv1.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.fb-card1-img2{
+    width: 280px;
+    height: 320px;
+    border-radius: 30px;
+    background: url(../img/otzyv2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.fb-card1-img3{
+    width: 280px;
+    height: 320px;
+    border-radius: 30px;
+    background: url(../img/otzyv3.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.fb-card1-img4{
+    width: 280px;
+    height: 320px;
+    border-radius: 30px;
+    background: url(../img/otzyv4.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.fb-card1-h3 {
+    margin-top: 30px;
+}
+.fb-card1-rating {
+}
+.fb-card1-span {
+    margin-right: 10px;
+}
+.fb-card1-ul {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.fb-card1-li {
+    background: url(../img/star.svg);
+    background-size: cover;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+}
+.fb-card1-p {
+    margin-top: 15px;
 }
