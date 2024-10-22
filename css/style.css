@@ -40,6 +40,7 @@ body{
 }
 .header-img{
     height: 100vh;
+    display: block;
 }
 .header-right-text {
     width: 100%;
@@ -70,11 +71,21 @@ body{
     justify-content: space-around;
     /* background: purple; */
 }
-.header-menu-li {
+.header-menu-li, .header-menu-li-logo {
     /* background: lawngreen; */
+    color: white;
+    text-decoration: none;
+}
+.header-menu-li-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 .menu-li-logo {
-    width: 100px;
+    width: 50px;
+    margin-bottom: 5px;
 }
 .header-right-text-block {
     text-align: center;
@@ -380,7 +391,7 @@ body{
 }
 .sec4-h2 {
     margin-top: 15px;
-    font-size: 28px;
+    font-size: 20px;
     font-family: Athelas-Regular;
 }
 
@@ -478,4 +489,193 @@ box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 .fb-card1-p {
     margin-top: 15px;
+}
+
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+.work_at_contract {
+    padding: 30px;
+    /* background: fuchsia; */
+    background: #F6F6F6;
+}
+.wac_content {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+}
+.wac_text {
+    /* background: blue; */
+    
+}
+.wac_text_h3 {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-family: Athelas;
+    font-weight: normal;
+}
+.wac_cards {
+    /* background: green; */
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wac_card_1 {
+    /* background: purple; */
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 255px;
+    transition: 0.5s;
+}
+.wac_card_1:hover{
+    scale: 1.1;
+    .wac_card_img{
+        box-shadow: 0 0 15px #f1a73f;
+    }
+}
+.wac_card_img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
+    
+    transition: 0.3s;
+}
+.wac_card_h4 {
+    margin-top: 15px;
+    text-align: center;
+    
+}
+.wac_card_p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* f1a73f */
+
+.contacts {
+    /* background: red; */
+    background: linear-gradient(to right,#202020,#f1a73f);
+    /* padding: 30px; */
+    color: white;
+}
+.contacts-content {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: green; */
+}
+.cont-left {
+    /* background: blue; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 50px 0 ;
+}
+.cont-h2 {
+    font-size: 30px;
+    max-width: 490px;
+
+}
+.cont-form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+.cont-form input{
+    padding: 15px 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 14px;
+    transition: 0.2s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.cont-form input:focus{
+    box-shadow: 0 0 15px #f1a73f;
+}
+.cont-btn {
+    margin-top: 5px;
+    max-width: 150px;
+    padding: 15px 15px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    border: none;
+    background: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.cont-btn:hover{
+    background: #202020;
+    color: white;
+    box-shadow: 0 0 10px #f1a73f;
+}
+.cont-links {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cont-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont-social img{
+    width: 45px;
+    margin: 5px;
+}
+
+.cont-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;  
+}
+.cont-phone a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;  
+    color: white;
+}
+.cont-phone img{
+    width: 35px;
+    margin-right: 10px;
+}
+.cont-right {
+    height: 700px;
+    width: 700px;
+    /* height: 100%; */
+    /* width: 100%; */
+    background: url(../img/zamer2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.cont-img {
+    max-width: 800px;
+    /* background: #000; */
+    margin: 0;
+    padding: 0;
+    display: block;
 }
