@@ -10,22 +10,27 @@
 <body>
     <div class="header">
     <div class="header-content">
+        <div class="header-logo">
+            <img src="./img/degree.png" alt="Logo Royal Stair" class="header-logo-img">
+            ROYAL STAIR
+        </div>
+        <div class="header-burger" onclick="toggleMenu()">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        <div class="header-menu" id="headerMenu">
+    <div class="header-menu-content">
+        <ul class="header-menu-ul">
+            <a href="#about" class="header-menu-li">О нас</a>
+            <a href="#gallery" class="header-menu-li">Галерея</a>
+            <a href="#reviews" class="header-menu-li">Отзывы</a>
+            <a href="#contacts" class="header-menu-li">Контакты</a>
+        </ul>
+    </div>
+</div>
         <div class="header-right-text">
             <div class="header-right-text-content">
-                <div class="header-menu">
-                    <div class="header-menu-content">
-                        <ul class="header-menu-ul">
-                            <a href="" class="header-menu-li">О нас</a>
-                            <a href="" class="header-menu-li">Галерея</a>
-                            <a href="" class="header-menu-li-logo">
-                                <img src="./img/degree.png" alt="Logo Royal Stair" class="menu-li-logo">
-                                ROYAL STAIR
-                            </a>
-                            <a href="" class="header-menu-li">Отзывы</a>
-                            <a href="" class="header-menu-li">Контакты</a>
-                        </ul>
-                    </div>
-                </div>
                 <div class="header-right-text-block">
                     <div class="header-right-text-h1">
                         <h1 class="header-h1">
@@ -109,11 +114,11 @@
         <h1 class="sec3-h1">Галерея</h1>      
         <div class="gallery">
             <div class="gallery-left">
-                <div class="ph1-left gallery-item" onclick="openModal('url(../img/gal1.png)')"></div>
+                <div class="ph1-left gallery-item" onclick="openModal('url(../img/gal1.JPG)')"></div>
                 <div class="ph2-left gallery-item" onclick="openModal('url(../img/gal2.png)')"></div>
             </div>
             <div class="gallery-center">
-                <div class="ph3-center gallery-item" onclick="openModal('url(../img/gal3.JPG)')"></div>
+                <div class="ph3-center gallery-item" onclick="openModal('url(../img/gal333.png)')"></div>
             </div>
             <div class="gallery-right">
                 <div class="ph4-right gallery-item" onclick="openModal('url(../img/gal4.png)')"></div>

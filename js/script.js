@@ -1,8 +1,8 @@
 let currentIndex = 0;
 const images = [
-    '../img/gal1.png',
+    '../img/gal1.jpg',
     '../img/gal2.png',
-    '../img/gal3.JPG',
+    '../img/gal333.png',
     '../img/gal4.png',
     '../img/gal5.png'
 ];
@@ -40,3 +40,7 @@ function initGallery() {
 document.addEventListener('DOMContentLoaded', initGallery);
 
 
+function toggleMenu() {
+    const menu = document.getElementById("headerMenu");
+    menu.classList.toggle("active");
+}
