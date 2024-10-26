@@ -71,6 +71,9 @@ body{
     justify-content: space-around;
     /* background: purple; */
 }
+.header-menu-li{
+    font-size: 16px;
+}
 .header-menu-li, .header-menu-li-logo {
     /* background: lawngreen; */
     color: white;
