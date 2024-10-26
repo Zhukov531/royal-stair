@@ -3,57 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="header">
-        <div class="header-content">
-            <div class="header-left-img">
-                <div class="header-left-img-content">
-                    <img src="./img/header_img.png" alt="Лестница" class="header-img">
-                </div>
-            </div>
-            <div class="header-right-text">
-                <div class="header-right-text-content">
-                    <div class="header-menu">
-                        <div class="header-menu-content">
-                            <ul class="header-menu-ul">
-                                <a href="" class="header-menu-li">О нас</ф>
-                                <a href="" class="header-menu-li">Галерея</a>
-                                <a href="" class="header-menu-li-logo">
-                                    <img src="./img/degree.png" alt="Logo Royal Stair" class="menu-li-logo">
-                                    ROYAL STAIR
-                                </a>
-                                <a href="" class="header-menu-li">Отзывы</a>
-                                <a href="" class="header-menu-li">Контакты</a>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="header-right-text-block">
-                        <div class="header-right-text-h1">
-                            <h1 class="header-h1">
+    <div class="header-content">
+        <div class="header-right-text">
+            <div class="header-right-text-content">
+                <div class="header-menu">
+                    <div class="header-menu-content">
+                        <ul class="header-menu-ul">
+                            <a href="" class="header-menu-li">О нас</a>
+                            <a href="" class="header-menu-li">Галерея</a>
+                            <a href="" class="header-menu-li-logo">
+                                <img src="./img/degree.png" alt="Logo Royal Stair" class="menu-li-logo">
                                 ROYAL STAIR
-                            </h1>
-                        </div>
-                        <div class="header-right-text-p">
-                            <p class="header-p">
-                                Лестницы из металла
-                            </p>
-                            <p class="header-p2">
-                                Безопасность в прочности
-                            </p>
-                        </div>
-                        <div class="header-right-text-btn">
-                            <button class="header-btn">
-                                Записаться на замер
-                            </button>
-                        </div>
+                            </a>
+                            <a href="" class="header-menu-li">Отзывы</a>
+                            <a href="" class="header-menu-li">Контакты</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-right-text-block">
+                    <div class="header-right-text-h1">
+                        <h1 class="header-h1">
+                            ROYAL STAIR
+                        </h1>
+                    </div>
+                    <div class="header-right-text-p">
+                        <p class="header-p">
+                            Лестницы из металла
+                        </p>
+                        <p class="header-p2">
+                            Безопасность в прочности
+                        </p>
+                    </div>
+                    <div class="header-right-text-btn">
+                        <button class="header-btn">
+                            Записаться на замер
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="header-left-img">
+            <div class="header-left-img-content">
+                <img src="./img/header_img.png" alt="Лестница" class="header-img">
+            </div>
+        </div>
     </div>
+</div>
     <div class="sec2">
         <div class="sec2-content">
             <div class="sec2-left">
@@ -104,35 +105,34 @@
         </div>
     </div>
     <div class="sec3">
-        <div class="sec3-content">  
-            <h1 class="sec3-h1">
-                Галерея
-            </h1>      
-            <div class="gallery">
-                <div class="gallery-left">
-                    <div class="ph1-left">
-                        
-                    </div>
-                    <div class="ph2-left">
-
-                    </div>
-                </div>
-                <div class="gallery-center">
-                    <div class="ph3-center">
-
-                    </div>
-                </div>
-                <div class="gallery-right">
-                    <div class="ph4-right">
-
-                    </div>
-                    <div class="ph5-right">
-
-                    </div>
-                </div>
+    <div class="sec3-content">  
+        <h1 class="sec3-h1">Галерея</h1>      
+        <div class="gallery">
+            <div class="gallery-left">
+                <div class="ph1-left gallery-item" onclick="openModal('url(../img/gal1.png)')"></div>
+                <div class="ph2-left gallery-item" onclick="openModal('url(../img/gal2.png)')"></div>
+            </div>
+            <div class="gallery-center">
+                <div class="ph3-center gallery-item" onclick="openModal('url(../img/gal3.JPG)')"></div>
+            </div>
+            <div class="gallery-right">
+                <div class="ph4-right gallery-item" onclick="openModal('url(../img/gal4.png)')"></div>
+                <div class="ph5-right gallery-item" onclick="openModal('url(../img/gal5.png)')"></div>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Модальное окно -->
+
+<div id="modal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+
+
+
+
     <div class="sec4-uslugi">
         <div class="sec-4-content">
             <h2 class="h2-uslugi">

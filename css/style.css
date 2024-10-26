@@ -71,6 +71,9 @@ body{
     justify-content: space-around;
     /* background: purple; */
 }
+.header-menu-li{
+    font-size: 20px;
+}
 .header-menu-li, .header-menu-li-logo {
     /* background: lawngreen; */
     color: white;
@@ -213,6 +216,7 @@ body{
 }
 .sec2-photo1 {
     width: 60%;
+    max-width: 350px;
     min-height: 400px;
     background: url(../img/zamer.png);
     background-size: cover;
@@ -226,6 +230,7 @@ body{
 
 .sec2-photo2 {
     width: 60%;
+    max-width: 350px;
     height: 400px;
     background: url(../img/tubes.jpg);
     background-size: cover;
@@ -273,7 +278,7 @@ body{
     justify-content: center;
 }
 .ph1-left{
-    background: url(../img/IMG_4502.HEIC);
+    background: url(../img/gal1.png);
     width: 250px;
     height: 250px;
     margin: 5px;
@@ -282,7 +287,7 @@ body{
 }
 
 .ph2-left{
-    background: url(../img/IMG_4423.HEIC);
+    background: url(../img/gal2.png);
     width: 250px;
     height: 250px;
     margin: 5px;
@@ -300,7 +305,7 @@ body{
     
 }
 .ph3-center{
-    background: url("../img/IMG_7411 2.JPG");
+    background: url("../img/gal3.jpg");
     width: 600px;
     height: 510px;
     margin: 5px;
@@ -316,7 +321,7 @@ body{
     justify-content: center;
 }
 .ph4-right{
-    background: url("../img/IMG_8499 2.DNG");
+    background: url("../img/gal4.png");
     width: 250px;
     height: 250px;
     margin: 5px;
@@ -325,7 +330,7 @@ body{
 }
 
 .ph5-right{
-    background: url("../img/IMG_4928 2.heic");
+    background: url("../img/gal5.png");
     width: 250px;
     height: 250px;
     margin: 5px;
@@ -336,6 +341,54 @@ body{
 .ph1-left, .ph2-left, .ph3-center, .ph4-right, .ph5-right{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный фон */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
@@ -492,6 +545,7 @@ box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 
+
 /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 .work_at_contract {
@@ -585,7 +639,7 @@ box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
-    padding: 50px 0 ;
+    padding: 50px 50px ;
 }
 .cont-h2 {
     font-size: 30px;
@@ -678,4 +732,258 @@ box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     margin: 0;
     padding: 0;
     display: block;
+}
+
+
+/* ------------------------------------------------------------ */
+
+/* Общие стили для мобильных устройств */
+@media (max-width: 768px) {
+    @media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    .header-left-img, .header-right-text {
+        width: 100%;
+    }
+    .header-img {
+        height: auto;
+        width: 100%;
+    }
+    .header-right-text-content {
+        padding: 20px;
+    }
+    .header-menu-ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-menu-li, .header-menu-li-logo {
+        margin: 10px 0;
+    }
+    .header-right-text-block {
+        padding: 20px 0;
+    }
+    .header-h1 {
+        font-size: 30px;
+    }
+    .header-p, .header-p2 {
+        font-size: 18px;
+    }
+    .header-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Добавляем стили для меню на мобильных устройствах */
+    .header-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #202020;
+        z-index: 1000;
+    }
+    .header-menu-content {
+        padding: 10px;
+    }
+    .header-right-text {
+        margin-top: 60px; /* Высота меню + отступ */
+    }
+}
+
+    .sec2-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .sec2-left, .sec2-right {
+        width: 100%;
+    }
+    .sec2-left-about, .sec2-left-why, .sec2-left-deadline {
+        margin-top: 20px;
+    }
+    .sec2-photo1, .sec2-photo2 {
+        width: 100%;
+        max-width: none;
+        height: 300px;
+        left: 0;
+        top: 0;
+    }
+
+    .sec3-content {
+        padding: 20px;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .gallery-left, .gallery-center, .gallery-right {
+        width: 100%;
+    }
+    .ph1-left, .ph2-left, .ph3-center, .ph4-right, .ph5-right {
+        width: 100%;
+        height: 200px;
+    }
+
+    .sec4-uslugi {
+        padding: 20px;
+    }
+    .sec4-cards {
+        flex-direction: column;
+    }
+    .sec4-card-1 {
+        width: 100%;
+        max-width: none;
+    }
+    .sec4-card1-img, .sec4-card1-img2, .sec4-card1-img3 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .feedback {
+        padding: 20px;
+    }
+    .fb-cards {
+        flex-direction: column;
+    }
+    .fb-card1 {
+        width: 100%;
+    }
+    .fb-card1-img, .fb-card1-img2, .fb-card1-img3, .fb-card1-img4 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .work_at_contract {
+        padding: 20px;
+    }
+    .wac_cards {
+        flex-direction: column;
+    }
+    .wac_card_1 {
+        width: 100%;
+    }
+
+    .contacts-content {
+        flex-direction: column;
+    }
+    .cont-left, .cont-right {
+        width: 100%;
+    }
+    .cont-right {
+        height: 300px;
+        width: 100%;
+    }
+    .cont-form {
+        max-width: none;
+    }
+    .cont-links {
+        flex-direction: column;
+    }
+    .cont-social {
+        margin-bottom: 20px;
+    }
+}
+/* Общие стили для мобильных устройств */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        position: relative;
+    }
+    .header-left-img, .header-right-text {
+        width: 100%;
+    }
+    .header-img {
+        height: auto;
+        width: 100%;
+    }
+    .header-right-text-content {
+        padding: 20px;
+    }
+    .header-right-text-block {
+        padding: 20px 0;
+    }
+    .header-h1 {
+        font-size: 30px;
+    }
+    .header-p, .header-p2 {
+        font-size: 18px;
+    }
+    .header-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Стили для логотипа */
+    .header-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background: #202020;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1001;
+    }
+    .header-logo-img {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    /* Стили для бургер-меню */
+    .header-burger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .burger-line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    /* Стили для меню */
+    .header-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #202020;
+        z-index: 1000;
+    }
+    .header-menu-content {
+        padding: 10px;
+    }
+    .header-menu-ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-menu-li {
+        margin: 10px 0;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    /* Стили для отображения меню */
+    .header-menu.active {
+        display: block;
+    }
+}
+
+/* Скрываем бургер-меню на десктопе */
+@media (min-width: 769px) {
+    .header-burger {
+        display: none;
+    }
+    .header-menu {
+        display: block;
+    }
 }
