@@ -46,9 +46,11 @@
                         </p>
                     </div>
                     <div class="header-right-text-btn">
+                        <a href="#contacts">
                         <button class="header-btn">
                             Записаться на замер
                         </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -60,7 +62,7 @@
         </div>
     </div>
 </div>
-    <div class="sec2">
+    <div id="about" class="sec2">
         <div class="sec2-content">
             <div class="sec2-left">
                 <div class="sec2-left-content">
@@ -82,6 +84,7 @@
                         </h2>
                         <p class="why-p">
                             Мы, команда <b>Royal Stair</b>, любим свою работу! Для нас главное — лучший результат! <br> 
+                            <br>
                             Для этого мы делаем точные замеры, а также производим высококачественный отбор материала, и закупаем только соответствующий ГОСТу, проверяя перед закупкой толщину металла специальным инструментом. Ответственно относимся к каждой детали от нарезки металла, до окончания монтажа в Вашем замечательном доме.
                         </p>
                     </div>
@@ -109,7 +112,7 @@
             </div>
         </div>
     </div>
-    <div class="sec3">
+    <div id="gallery" class="sec3">
     <div class="sec3-content">  
         <h1 class="sec3-h1">Галерея</h1>      
         <div class="gallery">
@@ -150,7 +153,7 @@
                 </div>
                 <div class="sec4-card-1">
                     <div class="sec4-card1-img2"></div>
-                    <h3 class="sec4-h2">Установка железных лестниц</h3>
+                    <h3 class="sec4-h2">Монтаж каркаса из металла</h3>
                 </div>
                 <div class="sec4-card-1">
                     <div class="sec4-card1-img3"></div>
@@ -159,7 +162,8 @@
             </div>
         </div>
     </div>
-    <div class="feedback">
+
+    <div id="reviews" class="feedback">
         <div class="fb-content">
             <h2 class="fb-h2">
                 Отзывы
@@ -268,8 +272,7 @@
                     <h4 class="wac_card_h4">Поэтапная оплата</h4>
                     <p class="wac_card_p">
                         Оплата работ разбита на 2 части и
-вносится после подписания актов
-выполненных работ.
+вносится после подписания договора.
                     </p>
                 </div>
                 <div class="wac_card_1">
@@ -294,36 +297,36 @@
         </div>
     </div>
 
-    <div class="contacts">
+    <div id="contacts" class="contacts">
         <div class="contacts-content">
             <div class="cont-left">
                 <div class="cont-h2">
                     <h2>Закажите бесплатный выезд мастера-замерщика</h2>
                 </div>
-                <div class="cont-form">
-                    <input type="text" placeholder="Имя Фамилия*" required>
-                    <input type="number" placeholder="Телефон*" required>
-                    <input type="text" placeholder="Адрес">
-                    <button class="cont-btn">
+                <form action="https://formspree.io/f/xbljyplr" method="POST" class="cont-form">
+                    <input type="text" name="name" placeholder="Имя Фамилия*" required>
+                    <input type="number" name="phone" placeholder="Телефон*" required>
+                    <input type="text" name="addres" placeholder="Адрес">
+                    <button type="submit" class="cont-btn">
                         Отправить
                     </button>
-                </div>
+                </form>
                 <div class="cont-links">
                     <div class="cont-social">
-                        <a href="">
+                        <a href="https://www.instagram.com/royal_stair/profilecard/?igsh=MTBoMjF3NzFmc3dpdg==">
                             <img src="./img/mdi_instagram.png" alt="" class="cont-social-img">
                         </a>
-                        <a href="">
+                        <a href="https://t.me/@royal_stair_krd/">
                             <img src="./img/ic_baseline-telegram.png" alt="" class="cont-social-img">
                         </a>
-                        <a href="">
+                        <a href="https://api.whatsapp.com/send?phone=79892851296">
                             <img src="./img/ic_baseline-whatsapp.png" alt="" class="cont-social-img">
                         </a>
                     </div>
                     <div class="cont-phone">
-                        <a href="#">
+                        <a href="tel:+79892851296">
                             <img src="./img/proicons_phone.png" alt="">
-                            +7 (999)999-99-99
+                            +7 (989) 285-12-96
                         </a>
                     </div>
                 </div>
