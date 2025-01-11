@@ -415,6 +415,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .sec4-card-1 {
@@ -465,6 +466,7 @@ body {
 
 .fb-content {
     padding: 50px;
+    
 }
 
 .fb-h2 {
@@ -473,18 +475,26 @@ body {
 }
 
 .fb-cards {
+
     margin-top: 50px;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .fb-card1 {
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: 0.5s;
+    /* background: red; */
+    @media (max-width: 768px) {
+        margin-top: 30px;
+        background: blue;
+    }
 }
 
 .fb-card1:hover {
@@ -560,6 +570,7 @@ body {
 
 .fb-card1-p {
     margin-top: 15px;
+    max-width: 300px;
 }
 
 .work_at_contract {
@@ -591,6 +602,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .wac_card_1 {
@@ -899,6 +911,7 @@ body {
     }
     .sec4-cards {
         flex-direction: column;
+        
     }
     .sec4-card-1 {
         width: 100%;
