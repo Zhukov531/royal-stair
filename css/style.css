@@ -479,7 +479,7 @@ body {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -744,7 +744,7 @@ body {
 .cont-right {
     height: 700px;
     width: 700px;
-    background: url(../img/zamer2.png);
+    background: url(../img/Zamer-final.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
